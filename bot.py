@@ -61,8 +61,7 @@ def premium_emoji(text: str) -> str:
 
 def get_main_menu_keyboard(user_id=None):
     buttons = [
-        [Button.inline(" Cmd", b"show_cmds", style="success"),
-         ]
+        [Button.inline(" Cmd", b"show_cmds", style="success")]
     ]
     
     if user_id and user_id in ADMIN_ID:
@@ -358,7 +357,7 @@ Hits:
 💡 Made by @Xyoshy"""
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"Xyoshy{timestamp}.txt"
+    filename = f"afuonax{timestamp}.txt"
 
     async with aiofiles.open(filename, 'w') as f:
         await f.write("CC CHECKER RESULTS\n")
