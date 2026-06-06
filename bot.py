@@ -75,7 +75,7 @@ def premium_emoji(text: str) -> str:
 active_sessions = {}
 user_main_menu = {}
 
-bot = TelegramClient('checker_bot', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
+bot = TelegramClient('checker_bot', API_ID, API_HASH)
 
 _DEAD_INDICATORS = (
     'receipt id is empty', 'handle is empty', 'product id is empty',
@@ -1443,6 +1443,7 @@ async def auto_add_admins():
                 f.write(f"{admin_id_str}\n")
             print(f"✅ Admin {admin_id_str} added to premium automatically!")
 async def main():
+    await bot.start(bot_token=BOT_TOKEN)
     await auto_add_admins()
     print("✅ Bot started successfully!")
     print("⚡ Bot By: @Xyoshy")
