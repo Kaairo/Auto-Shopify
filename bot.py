@@ -9,8 +9,8 @@ import json
 import re
 from datetime import datetime
 
-API_ID = 33990838
-API_HASH = 'db2493f3d099768a43becc7b2f2c5226'
+API_ID = 21124241
+API_HASH = 'b7ddce3d3683f54be788fddae73fa468'
 BOT_TOKEN = '8881606574:AAEnhtwz-A5laDUWrLCnkDyb0DNnJKt-z0c'
 ADMIN_ID = [6601184733]
 CHECKER_API_URL = 'https://afuonax.up.railway.app/shopify_parallel'
