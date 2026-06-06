@@ -11,8 +11,8 @@ from datetime import datetime
 
 API_ID = 21124241
 API_HASH = 'b7ddce3d3683f54be788fddae73fa468'
-BOT_TOKEN = '8881606574:AAEnhtwz-A5laDUWrLCnkDyb0DNnJKt-z0c'
-ADMIN_ID = [6601184733]
+BOT_TOKEN = '8667873264:AAHTPtDT1w34K40_rHXcv34eCpl78t5H5aY'
+ADMIN_ID = [33990838]
 CHECKER_API_URL = 'https://afuonax.up.railway.app/shopify_parallel'
 
 PREMIUM_USERS_FILE = "premium_users.txt"
@@ -61,7 +61,8 @@ def premium_emoji(text: str) -> str:
 
 def get_main_menu_keyboard(user_id=None):
     buttons = [
-        [Button.inline(" Cmd", b"show_cmds", style="success")]
+        [Button.inline(" Cmd", b"show_cmds", style="success"),
+         Button.url(" Channel", "https://t.me/+kxhCcDXQgzQ5MjE0", style="success")]
     ]
     
     if user_id and user_id in ADMIN_ID:
@@ -354,7 +355,7 @@ async def send_final_results(user_id, results):
 Hits:
 {hits_text}
 
-💡 Made by @Xyoshy"""
+💡 Made by @AFUONA_V"""
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     filename = f"afuonax{timestamp}.txt"
@@ -465,7 +466,7 @@ async def start(event):
    🦉 Add sites: <code>/site</code>
    🦉 Check CC: <code>/cc card|mm|yy|cvv</code>
 
-💡 Made by @Xyoshy"""
+💡 Made by @AFUONA_V"""
     
     buttons = get_main_menu_keyboard(user_id)
     
@@ -540,7 +541,7 @@ async def main_menu_callback(event):
    ➥ Add sites: <code>/site</code>
    ➥ Check CC: <code>/cc card|mm|yy|cvv</code>
 
-💡 Made by @Xyoshy"""
+💡 Made by @AFUONA_V"""
     
     buttons = get_main_menu_keyboard(user_id)
     
@@ -605,7 +606,7 @@ async def single_cc_check(event):
 🏦 Bank {bank}
 🥰 Country {country} {flag}
 
-💡 Made by @Xyoshy"""
+💡 Made by @AFUONA_V"""
 
         await status_msg.edit(premium_emoji(final_resp), parse_mode='html')
 
