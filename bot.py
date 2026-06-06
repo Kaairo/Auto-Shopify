@@ -9,7 +9,7 @@ import re
 from datetime import datetime
 from telethon import TelegramClient, events, Button
 
-CHECKER_API_URL = 'https://afuona.up.railway.app/shopify'
+CHECKER_API_URL = 'https://afuona.up.railway.app/shopify?site=xxxxx&cc=xxxxxx&proxy=xxxxx'
 
 API_ID = 33990838
 API_HASH = 'db2493f3d099768a43becc7b2f2c5226'
